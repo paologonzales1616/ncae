@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ncae/pages/home_page.dart';
 
-class EntrepreneurshipAnswerPage extends StatefulWidget {
-  EntrepreneurshipAnswerPage({
+class ScienceEasyAnswerPage extends StatefulWidget {
+  ScienceEasyAnswerPage({
     @required this.answer_1,
     @required this.answer_2,
     @required this.answer_3,
@@ -14,14 +14,11 @@ class EntrepreneurshipAnswerPage extends StatefulWidget {
   final String answer_3;
   final String answer_4;
   final String answer_5;
-
   @override
-  _EntrepreneurshipAnswerPageState createState() =>
-      _EntrepreneurshipAnswerPageState();
+  _ScienceEasyAnswerPageState createState() => _ScienceEasyAnswerPageState();
 }
 
-class _EntrepreneurshipAnswerPageState
-    extends State<EntrepreneurshipAnswerPage> {
+class _ScienceEasyAnswerPageState extends State<ScienceEasyAnswerPage> {
   bool correct_1 = false; //b
   bool correct_2 = false; //c
   bool correct_3 = false; //a
@@ -36,19 +33,19 @@ class _EntrepreneurshipAnswerPageState
         correct_1 = true;
         ++numberOfCorrect;
       }
-      if (widget.answer_2 == "a") {
+      if (widget.answer_2 == "b") {
         correct_2 = true;
         ++numberOfCorrect;
       }
-      if (widget.answer_3 == "b") {
+      if (widget.answer_3 == "c") {
         correct_3 = true;
         ++numberOfCorrect;
       }
-      if (widget.answer_4 == "b") {
+      if (widget.answer_4 == "a") {
         correct_4 = true;
         ++numberOfCorrect;
       }
-      if (widget.answer_5 == "d") {
+      if (widget.answer_5 == "a") {
         correct_5 = true;
         ++numberOfCorrect;
       }
@@ -81,7 +78,7 @@ class _EntrepreneurshipAnswerPageState
                 height: height * .15,
               ),
               Text(
-                "Answer for Entrpreneurship",
+                "Answer for Science",
                 textAlign: TextAlign.center,
                 style: TextStyle(color: Colors.white, fontSize: 22.0),
               ),
@@ -115,7 +112,7 @@ class _EntrepreneurshipAnswerPageState
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Answer: Creativity",
+                    "Answer: It’s particles lose energy",
                     style: TextStyle(fontSize: 18.0),
                   ),
                 ),
@@ -147,7 +144,7 @@ class _EntrepreneurshipAnswerPageState
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Answer: Assets",
+                    "Answer: Lower left corner of the periodic table",
                     style: TextStyle(fontSize: 18.0),
                   ),
                 ),
@@ -179,7 +176,7 @@ class _EntrepreneurshipAnswerPageState
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Answer: Liability",
+                    "Answer: 6",
                     style: TextStyle(fontSize: 18.0),
                   ),
                 ),
@@ -211,7 +208,7 @@ class _EntrepreneurshipAnswerPageState
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Answer: Reliance on his/her memory",
+                    "Answer: A natural law",
                     style: TextStyle(fontSize: 18.0),
                   ),
                 ),
@@ -243,7 +240,7 @@ class _EntrepreneurshipAnswerPageState
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Answer: All of the choices",
+                    "Answer: Guitar",
                     style: TextStyle(fontSize: 18.0),
                   ),
                 ),

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ncae/pages/home_page.dart';
 
-class ReadingAnswerPage extends StatefulWidget {
-  ReadingAnswerPage({
+class ReadingEasyAnswerPage extends StatefulWidget {
+  ReadingEasyAnswerPage({
     @required this.answer_1,
     @required this.answer_2,
     @required this.answer_3,
@@ -16,10 +16,10 @@ class ReadingAnswerPage extends StatefulWidget {
   final String answer_5;
 
   @override
-  _ReadingAnswerPageState createState() => _ReadingAnswerPageState();
+  _ReadingEasyAnswerPageState createState() => _ReadingEasyAnswerPageState();
 }
 
-class _ReadingAnswerPageState extends State<ReadingAnswerPage> {
+class _ReadingEasyAnswerPageState extends State<ReadingEasyAnswerPage> {
   bool correct_1 = false; //b
   bool correct_2 = false; //c
   bool correct_3 = false; //a

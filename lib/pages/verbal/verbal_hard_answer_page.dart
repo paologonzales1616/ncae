@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ncae/pages/home_page.dart';
 
-class ScienceAnswerPage extends StatefulWidget {
-  ScienceAnswerPage({
+class VerbalHardAnswerPage extends StatefulWidget {
+  VerbalHardAnswerPage({
     @required this.answer_1,
     @required this.answer_2,
     @required this.answer_3,
@@ -15,10 +15,10 @@ class ScienceAnswerPage extends StatefulWidget {
   final String answer_4;
   final String answer_5;
   @override
-  _ScienceAnswerPageState createState() => _ScienceAnswerPageState();
+  _VerbalHardAnswerPageState createState() => _VerbalHardAnswerPageState();
 }
 
-class _ScienceAnswerPageState extends State<ScienceAnswerPage> {
+class _VerbalHardAnswerPageState extends State<VerbalHardAnswerPage> {
   bool correct_1 = false; //b
   bool correct_2 = false; //c
   bool correct_3 = false; //a
@@ -29,7 +29,7 @@ class _ScienceAnswerPageState extends State<ScienceAnswerPage> {
   @override
   void initState() {
     setState(() {
-      if (widget.answer_1 == "d") {
+      if (widget.answer_1 == "b") {
         correct_1 = true;
         ++numberOfCorrect;
       }
@@ -37,15 +37,15 @@ class _ScienceAnswerPageState extends State<ScienceAnswerPage> {
         correct_2 = true;
         ++numberOfCorrect;
       }
-      if (widget.answer_3 == "c") {
+      if (widget.answer_3 == "a") {
         correct_3 = true;
         ++numberOfCorrect;
       }
-      if (widget.answer_4 == "a") {
+      if (widget.answer_4 == "b") {
         correct_4 = true;
         ++numberOfCorrect;
       }
-      if (widget.answer_5 == "a") {
+      if (widget.answer_5 == "b") {
         correct_5 = true;
         ++numberOfCorrect;
       }
@@ -78,7 +78,7 @@ class _ScienceAnswerPageState extends State<ScienceAnswerPage> {
                 height: height * .15,
               ),
               Text(
-                "Answer for Science",
+                "Answer for Verbal",
                 textAlign: TextAlign.center,
                 style: TextStyle(color: Colors.white, fontSize: 22.0),
               ),
@@ -112,7 +112,7 @@ class _ScienceAnswerPageState extends State<ScienceAnswerPage> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Answer: It’s particles lose energy",
+                    "Answer: work",
                     style: TextStyle(fontSize: 18.0),
                   ),
                 ),
@@ -144,7 +144,7 @@ class _ScienceAnswerPageState extends State<ScienceAnswerPage> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Answer: Lower left corner of the periodic table",
+                    "Answer: is",
                     style: TextStyle(fontSize: 18.0),
                   ),
                 ),
@@ -176,7 +176,7 @@ class _ScienceAnswerPageState extends State<ScienceAnswerPage> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Answer: 6",
+                    "Answer: is",
                     style: TextStyle(fontSize: 18.0),
                   ),
                 ),
@@ -208,7 +208,7 @@ class _ScienceAnswerPageState extends State<ScienceAnswerPage> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Answer: A natural law",
+                    "Answer: are",
                     style: TextStyle(fontSize: 18.0),
                   ),
                 ),
@@ -240,7 +240,7 @@ class _ScienceAnswerPageState extends State<ScienceAnswerPage> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Answer: Guitar",
+                    "Answer: were",
                     style: TextStyle(fontSize: 18.0),
                   ),
                 ),

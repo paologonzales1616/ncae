@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ncae/pages/home_page.dart';
 
-class MathematicsAnswerPage extends StatefulWidget {
-  MathematicsAnswerPage({
+class MathematicsAverageAnswerPage extends StatefulWidget {
+  MathematicsAverageAnswerPage({
     @required this.answer_1,
     @required this.answer_2,
     @required this.answer_3,
@@ -16,10 +16,10 @@ class MathematicsAnswerPage extends StatefulWidget {
   final String answer_5;
 
   @override
-  _MathematicsAnswerPageState createState() => _MathematicsAnswerPageState();
+  _MathematicsAverageAnswerPageState createState() => _MathematicsAverageAnswerPageState();
 }
 
-class _MathematicsAnswerPageState extends State<MathematicsAnswerPage> {
+class _MathematicsAverageAnswerPageState extends State<MathematicsAverageAnswerPage> {
   bool correct_1 = false; //b
   bool correct_2 = false; //c
   bool correct_3 = false; //a

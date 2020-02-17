@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:ncae/pages/clerical/clerical_question_page.dart';
-import 'package:ncae/pages/entrpreneurship/entrpreneurship_question_page.dart';
-import 'package:ncae/pages/mathematics/mathematic_question_page.dart';
-import 'package:ncae/pages/reading/reading_question_page.dart';
-import 'package:ncae/pages/science/science_question_page.dart';
-import 'package:ncae/pages/verbal/verbal_question_page.dart';
+import 'package:ncae/pages/clerical/clerical_difficulty_page.dart';
+import 'package:ncae/pages/entrepreneurship/entrepreneurship_difficulty_page.dart';
+import 'package:ncae/pages/mathematics/mathematics_difficulty_page.dart';
+import 'package:ncae/pages/reading/reading_difficulty_page.dart';
+import 'package:ncae/pages/science/science_difficulty_page.dart';
+import 'package:ncae/pages/verbal/verbal_difficulty_page.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -43,7 +43,7 @@ class HomePage extends StatelessWidget {
                   onPressed: () => Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => ScienceQuestionPage(),
+                      builder: (context) => ScienceDifficultyPage(),
                     ),
                   ),
                 ),
@@ -66,7 +66,7 @@ class HomePage extends StatelessWidget {
                   onPressed: () => Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => ClericalQuestionPage(),
+                      builder: (context) => ClericalDifficultyPage(),
                     ),
                   ),
                 ),
@@ -89,7 +89,7 @@ class HomePage extends StatelessWidget {
                   onPressed: () => Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => VerbalQuestionPage(),
+                      builder: (context) => VerbalDifficultyPage(),
                     ),
                   ),
                 ),
@@ -112,7 +112,7 @@ class HomePage extends StatelessWidget {
                   onPressed: () => Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => MathematicsQuestionPage(),
+                      builder: (context) => MathematicsDifficultyPage(),
                     ),
                   ),
                 ),
@@ -135,7 +135,7 @@ class HomePage extends StatelessWidget {
                   onPressed: () => Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => EntrpreneurshipQuestionPage(),
+                      builder: (context) => EntrpreneurshipDifficultyPage(),
                     ),
                   ),
                 ),
@@ -158,7 +158,7 @@ class HomePage extends StatelessWidget {
                   onPressed: () => Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => ReadingQuestionPage(),
+                      builder: (context) => ReadingDifficultyPage(),
                     ),
                   ),
                 ),

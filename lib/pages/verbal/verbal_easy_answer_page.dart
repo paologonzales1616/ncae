@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ncae/pages/home_page.dart';
 
-class ClericalAnswerPage extends StatefulWidget {
-  ClericalAnswerPage({
+class VerbalEasyAnswerPage extends StatefulWidget {
+  VerbalEasyAnswerPage({
     @required this.answer_1,
     @required this.answer_2,
     @required this.answer_3,
@@ -15,10 +15,10 @@ class ClericalAnswerPage extends StatefulWidget {
   final String answer_4;
   final String answer_5;
   @override
-  _ClericalAnswerPageState createState() => _ClericalAnswerPageState();
+  _VerbalEasyAnswerPageState createState() => _VerbalEasyAnswerPageState();
 }
 
-class _ClericalAnswerPageState extends State<ClericalAnswerPage> {
+class _VerbalEasyAnswerPageState extends State<VerbalEasyAnswerPage> {
   bool correct_1 = false; //b
   bool correct_2 = false; //c
   bool correct_3 = false; //a
@@ -29,15 +29,15 @@ class _ClericalAnswerPageState extends State<ClericalAnswerPage> {
   @override
   void initState() {
     setState(() {
-      if (widget.answer_1 == "d") {
+      if (widget.answer_1 == "b") {
         correct_1 = true;
         ++numberOfCorrect;
       }
-      if (widget.answer_2 == "a") {
+      if (widget.answer_2 == "b") {
         correct_2 = true;
         ++numberOfCorrect;
       }
-      if (widget.answer_3 == "b") {
+      if (widget.answer_3 == "a") {
         correct_3 = true;
         ++numberOfCorrect;
       }
@@ -45,7 +45,7 @@ class _ClericalAnswerPageState extends State<ClericalAnswerPage> {
         correct_4 = true;
         ++numberOfCorrect;
       }
-      if (widget.answer_5 == "d") {
+      if (widget.answer_5 == "b") {
         correct_5 = true;
         ++numberOfCorrect;
       }
@@ -78,7 +78,7 @@ class _ClericalAnswerPageState extends State<ClericalAnswerPage> {
                 height: height * .15,
               ),
               Text(
-                "Answer for Clerical Ability",
+                "Answer for Verbal",
                 textAlign: TextAlign.center,
                 style: TextStyle(color: Colors.white, fontSize: 22.0),
               ),
@@ -112,7 +112,7 @@ class _ClericalAnswerPageState extends State<ClericalAnswerPage> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Answer: white",
+                    "Answer: work",
                     style: TextStyle(fontSize: 18.0),
                   ),
                 ),
@@ -144,7 +144,7 @@ class _ClericalAnswerPageState extends State<ClericalAnswerPage> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Answer: Angeme",
+                    "Answer: is",
                     style: TextStyle(fontSize: 18.0),
                   ),
                 ),
@@ -176,7 +176,7 @@ class _ClericalAnswerPageState extends State<ClericalAnswerPage> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Answer: red",
+                    "Answer: is",
                     style: TextStyle(fontSize: 18.0),
                   ),
                 ),
@@ -208,7 +208,7 @@ class _ClericalAnswerPageState extends State<ClericalAnswerPage> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Answer: broad",
+                    "Answer: are",
                     style: TextStyle(fontSize: 18.0),
                   ),
                 ),
@@ -240,7 +240,7 @@ class _ClericalAnswerPageState extends State<ClericalAnswerPage> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Answer: justify",
+                    "Answer: were",
                     style: TextStyle(fontSize: 18.0),
                   ),
                 ),

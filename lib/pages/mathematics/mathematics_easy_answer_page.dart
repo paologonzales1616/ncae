@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ncae/pages/home_page.dart';
 
-class VerbalAnswerPage extends StatefulWidget {
-  VerbalAnswerPage({
+class MathematicsEasyAnswerPage extends StatefulWidget {
+  MathematicsEasyAnswerPage({
     @required this.answer_1,
     @required this.answer_2,
     @required this.answer_3,
@@ -14,11 +14,12 @@ class VerbalAnswerPage extends StatefulWidget {
   final String answer_3;
   final String answer_4;
   final String answer_5;
+
   @override
-  _VerbalAnswerPageState createState() => _VerbalAnswerPageState();
+  _MathematicsEasyAnswerPageState createState() => _MathematicsEasyAnswerPageState();
 }
 
-class _VerbalAnswerPageState extends State<VerbalAnswerPage> {
+class _MathematicsEasyAnswerPageState extends State<MathematicsEasyAnswerPage> {
   bool correct_1 = false; //b
   bool correct_2 = false; //c
   bool correct_3 = false; //a
@@ -29,11 +30,11 @@ class _VerbalAnswerPageState extends State<VerbalAnswerPage> {
   @override
   void initState() {
     setState(() {
-      if (widget.answer_1 == "b") {
+      if (widget.answer_1 == "d") {
         correct_1 = true;
         ++numberOfCorrect;
       }
-      if (widget.answer_2 == "b") {
+      if (widget.answer_2 == "c") {
         correct_2 = true;
         ++numberOfCorrect;
       }
@@ -41,11 +42,11 @@ class _VerbalAnswerPageState extends State<VerbalAnswerPage> {
         correct_3 = true;
         ++numberOfCorrect;
       }
-      if (widget.answer_4 == "b") {
+      if (widget.answer_4 == "d") {
         correct_4 = true;
         ++numberOfCorrect;
       }
-      if (widget.answer_5 == "b") {
+      if (widget.answer_5 == "a") {
         correct_5 = true;
         ++numberOfCorrect;
       }
@@ -78,7 +79,7 @@ class _VerbalAnswerPageState extends State<VerbalAnswerPage> {
                 height: height * .15,
               ),
               Text(
-                "Answer for Verbal",
+                "Answer for Mathematics",
                 textAlign: TextAlign.center,
                 style: TextStyle(color: Colors.white, fontSize: 22.0),
               ),
@@ -112,7 +113,7 @@ class _VerbalAnswerPageState extends State<VerbalAnswerPage> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Answer: work",
+                    "Answer: 722",
                     style: TextStyle(fontSize: 18.0),
                   ),
                 ),
@@ -144,7 +145,7 @@ class _VerbalAnswerPageState extends State<VerbalAnswerPage> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Answer: is",
+                    "Answer: A+b must be between 14 and 26",
                     style: TextStyle(fontSize: 18.0),
                   ),
                 ),
@@ -176,7 +177,7 @@ class _VerbalAnswerPageState extends State<VerbalAnswerPage> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Answer: is",
+                    "Answer: K-10",
                     style: TextStyle(fontSize: 18.0),
                   ),
                 ),
@@ -208,7 +209,7 @@ class _VerbalAnswerPageState extends State<VerbalAnswerPage> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Answer: are",
+                    "Answer: 125/512",
                     style: TextStyle(fontSize: 18.0),
                   ),
                 ),
@@ -240,7 +241,7 @@ class _VerbalAnswerPageState extends State<VerbalAnswerPage> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Answer: were",
+                    "Answer: P100",
                     style: TextStyle(fontSize: 18.0),
                   ),
                 ),
